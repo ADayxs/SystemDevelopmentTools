@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+mode=safe
+=======
+mode=reviewed
+>>>>>>> feature-b
