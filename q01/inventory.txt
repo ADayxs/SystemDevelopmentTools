@@ -1,0 +1,3 @@
+-rw-r----- 1 yitian yitian 7 Aug 24 17:23 work/25020007170/input/docs/.secret.txt  7
+-rw-r----- 1 yitian yitian 11 Aug 24 17:23 work/25020007170/input/docs/notes one.txt  11
+-rw-r----- 1 yitian yitian 0 Aug 24 17:23 work/25020007170/input/tmp/empty.txt  0
