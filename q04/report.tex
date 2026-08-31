@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amsmath}
+\usepackage{ctex}
+
+\begin{document}
+
+\title{Tools Report: Log Analysis \& Version Control}
+\author{张鑫硕-25070007170}
+\date{\today}
+\maketitle
+
+本文说明作业中使用的命令行工具，包括 awk 日志分析与 Git 版本控制。
+
+如公式~\ref{eq:error_rate} 所示，错误率定义为 5xx 响应数除以总请求数：
+
+\begin{equation}
+\text{ErrorRate} = \frac{\text{TotalRequests}_{status\geq500}}{\text{TotalRequests}} \times 100\%
+\label{eq:error_rate}
+\end{equation}
+
+不同运行模式测试结果见表~\ref{tab:mode_test}：
+
+\begin{table}[htbp]
+    \centering
+    \caption{不同运行模式测试结果}
+    \label{tab:mode_test}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        模式 & 错误率 & 平均延迟 \\
+        \hline
+        safe & 0.12\% & 124ms \\
+        fast & 0.31\% & 47ms \\
+        normal & 0.18\% & 82ms \\
+        \hline
+    \end{tabular}
+\end{table}
+
+根据表~\ref{tab:mode_test}，safe 模式错误率最低，与前面合并冲突解决时的配置选择一致。
+
+\end{document}
+
